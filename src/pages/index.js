@@ -1,2 +1,3 @@
-"use strict";
-import("./index.css");
+'use strict';
+
+import './index.css';
