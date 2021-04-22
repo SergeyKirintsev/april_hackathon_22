@@ -2,7 +2,6 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/page/page.css);
 
-
 @import url(../blocks/section-heading/section-heading.css);
 @import url(../blocks/section-paragraph/section-paragraph.css);
 
@@ -17,3 +16,17 @@
 @import url(../blocks/portfolio/__project/portfolio__project.css);
 @import url(../blocks/portfolio/__project-image/portfolio__project-image.css);
 @import url(../blocks/portfolio/__link/portfolio__link.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__links/header__links.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__link/_active/header__link_active.css);
+
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__container/intro__container.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__subtitle/intro__subtitle.css);
+@import url(../blocks/intro/__lang/intro__lang.css);
+@import url(../blocks/intro/__lang-link/intro__lang-link.css);
+@import url(../blocks/intro/__lang-link/_active/intro__lang-link_active.css);
+@import url(../blocks/intro/__img/intro__img.css);
