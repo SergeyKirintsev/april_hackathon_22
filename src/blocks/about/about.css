@@ -1,0 +1,10 @@
+.about {
+  padding: 120px 0 107px 0;
+  background-color: var(--secondaryColor);
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 81px 30px 76px;
+  }
+}
