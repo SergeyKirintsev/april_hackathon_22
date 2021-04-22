@@ -1,0 +1,13 @@
+.portfolio__project-image {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto 45px;
+}
+
+@media screen and (max-width: 1040px) {
+  .portfolio__project-image {
+    margin: 0 auto 33px;
+  }
+}
+
