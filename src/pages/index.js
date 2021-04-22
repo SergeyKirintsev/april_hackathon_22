@@ -1,4 +1,2 @@
-'use strict';
-
-console.log("test");
-console.log("GREEN")
+"use strict";
+import("./index.css");

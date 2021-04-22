@@ -9,17 +9,36 @@
 
   <header class="header">
     <div class="header__container">
-    <ul>
-      <li>Home.</li>
-    </ul>
+      <nav class="header__menu">
+        <ul class="header__links">
+          <li><a href="#" class="header__link header__link_active" target="_self">Home</a></li>
+          <li><a href="#" class="header__link" target="_self">About me</a></li>
+          <li><a href="#" class="header__link" target="_self">Skills</a></li>
+          <li><a href="#" class="header__link" target="_self">Portfolio</a></li>
+          <li><a href="#" class="header__link" target="_self">Contacts</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main class="content">
     <section class="intro">
       <div class="intro__container">
-        <h1 class="header__heading"></h1>
+        <div class="intro__column-container">
+          <h1 class="intro__title">Denis</h1>
+          <h2 class="intro__title">Novik</h2>
+        </div>
+        <div class="intro__column-container">
+          <p class="intro__subtitle">UX | UI designer</p>
+          <p class="intro__subtitle">24 years old, Minsk</p>
+        </div>
+        <ul class="intro__lang">
+          <li><a href="#" class="intro__lang-link" target="_self">RU</a></li>
+          <li class="intro__lang-link intro__lang-link_active">|</li>
+          <li><a href="#" class="intro__lang-link intro__lang-link_active" target="_self">ENG</a></li>
+        </ul>
       </div>
+      <img src="<%=require('./images/foto-big.png')%>" alt="фото" class="intro__img">
     </section>
 
     <section class="about">
