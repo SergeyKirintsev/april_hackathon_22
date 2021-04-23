@@ -1,5 +1,6 @@
 .page_fixed {
   position: fixed;
+  pointer-events: none;
   padding-right: 17px;
 }
 

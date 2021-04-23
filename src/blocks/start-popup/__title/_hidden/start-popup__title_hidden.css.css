@@ -1,4 +1,4 @@
 .start-popup__title_hidden {
-  animation: text-pop-up-top-revert 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
-    tracking-out-contract 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-pop-up-top-revert 1s linear both,
+    tracking-out-contract 0.7s linear both;
 }
