@@ -43,7 +43,6 @@
 @import url(../blocks/header/__link/header__link.css);
 @import url(../blocks/header/__link/_active/header__link_active.css);
 
-@import url(../blocks/intro/intro.css);
 @import url(../blocks/intro/__container/intro__container.css);
 @import url(../blocks/intro/__title-container/intro__title-container.css);
 @import url(../blocks/intro/__title/intro__title.css);
@@ -51,9 +50,16 @@
 @import url(../blocks/intro/__lang-link/intro__lang-link.css);
 @import url(../blocks/intro/__lang-link/_active/intro__lang-link_active.css);
 @import url(../blocks/intro/__lang-link/_delimiter/intro__lang-link_delimiter.css);
-@import url(../blocks/intro/__img/intro__img.css);
 @import url(../blocks/intro/__cards/intro__cards.css);
-@import url(../blocks/intro/__card-container/intro__card-container.css);
+
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__image-container/card__image-container.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__details/card__details.css);
+@import url(../blocks/card/__wrapper/card__wrapper.css);
+@import url(../blocks/card/__name/card__name.css);
+@import url(../blocks/card/__position/card__position.css);
+@import url(../blocks/card/__experience/card__experience.css);
 
 @import url(../blocks/start-popup/start-popup.css);
 @import url(../blocks/start-popup/_hidden/start-popup_hidden.css);
@@ -65,3 +71,5 @@
 @import url(../blocks/anim-focus-in-contract/anim-focus-in-contract.css);
 @import url(../blocks/anim-tracking-out-contract/anim-tracking-out-contract.css);
 @import url(../blocks/anim-scale-out-horizontal/anim-scale-out-horizontal.css);
+@import url(../blocks/anim-text-focus-in/anim-text-focus-in.css);
+@import url(../blocks/anim-flicker/anim-flicker.css);
