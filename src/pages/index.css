@@ -51,6 +51,8 @@
 @import url(../blocks/intro/__lang-link/_active/intro__lang-link_active.css);
 @import url(../blocks/intro/__lang-link/_delimiter/intro__lang-link_delimiter.css);
 @import url(../blocks/intro/__img/intro__img.css);
+@import url(../blocks/intro/__cards/intro__cards.css);
+@import url(../blocks/intro/__card-container/intro__card-container.css);
 
 @import url(../blocks/start-popup/start-popup.css);
 @import url(../blocks/start-popup/_hidden/start-popup_hidden.css);
