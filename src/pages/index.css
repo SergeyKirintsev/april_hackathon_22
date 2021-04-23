@@ -30,9 +30,9 @@
 
 @import url(../blocks/portfolio/portfolio.css);
 @import url(../blocks/portfolio/__container/portfolio__container.css);
-@import url(../blocks/portfolio/__section-heading/portfolio__section-heading.css);
 @import url(../blocks/portfolio/__list/portfolio__list.css);
 @import url(../blocks/portfolio/__project/portfolio__project.css);
+@import url(../blocks/portfolio/__image-container/portfolio__image-container.css);
 @import url(../blocks/portfolio/__project-image/portfolio__project-image.css);
 @import url(../blocks/portfolio/__link/portfolio__link.css);
 

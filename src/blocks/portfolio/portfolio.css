@@ -1,11 +1,12 @@
 .portfolio {
-  padding: 113px 0 96px;
+  padding: 100px 0 100px;
   background-color: var(--secondaryColor);
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1350px) {
   .portfolio {
-    padding: 81px 30px 81px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

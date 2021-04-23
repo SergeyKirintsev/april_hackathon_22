@@ -1,18 +1,13 @@
 .portfolio__project {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 99px;
+  transition: .3s linear;
 }
 
-.portfolio__project:last-of-type {
-  margin: 0 auto;
+.portfolio__project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35), 0 12px 20px -12px rgba(0, 0, 0, 0.35);
 }
-
-@media screen and (max-width: 1040px) {
-  .portfolio__project {
-    margin: 0 auto 78px;
-  }
-}
-
