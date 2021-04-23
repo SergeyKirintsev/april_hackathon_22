@@ -1,16 +1,20 @@
 const dictionaryRu = {
-  "first-name": "Денис",
-  "last-name": "Новик",
+  home: "Домой",
   about: "Обо мне",
+  skills: "Навыки",
+  portfolio: "Портфолио",
+  contacts: "Контакты",
 };
 
 const dictionaryEng = {
-  "first-name": "Denis",
-  "last-name": "Novik",
+  home: "Home",
   about: "About me",
+  skills: "Skills",
+  portfolio: "Portfolio",
+  contacts: "Contacts",
 };
 
-const changeLang = (lng) => {
+const changeLang = (lng = "ENG") => {
   const dictionary = lng === "RU" ? dictionaryRu : dictionaryEng;
   for (let key in dictionary) {
     const element = document.querySelector(`#${key}`);
