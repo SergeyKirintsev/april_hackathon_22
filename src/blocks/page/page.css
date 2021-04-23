@@ -10,6 +10,6 @@
   --secondaryColor: #f6f6f6;
   --mainTextColor: #070707;
   --secondaryTextColor: #828282;
-
+  width: 100%;
   min-width: 320px;
 }

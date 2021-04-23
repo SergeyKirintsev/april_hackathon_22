@@ -1,0 +1,4 @@
+.page_fixed {
+  box-sizing: border-box;
+  position: fixed;
+}
