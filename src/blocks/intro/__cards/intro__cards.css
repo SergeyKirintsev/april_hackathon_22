@@ -2,6 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  opacity: 0;
 }
 
 @media screen and (max-width: 768px) {
