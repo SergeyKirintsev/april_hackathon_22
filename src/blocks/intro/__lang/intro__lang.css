@@ -1,0 +1,7 @@
+.intro__lang {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  transform: rotate(-90deg) translate(30px, 25px);
+}
