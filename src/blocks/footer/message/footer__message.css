@@ -1,0 +1,13 @@
+.footer__message{
+    height: 42px;
+    width: 180.5px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 21px;
+    outline: none;
+    border-width: 0 0;
+    margin-top: -20px;
+    cursor: pointer;
+}

@@ -4,6 +4,17 @@
 
 @import url(../blocks/section-heading/section-heading.css);
 @import url(../blocks/section-paragraph/section-paragraph.css);
+@import url(../blocks/section-paragraph/_type/section-paragraph_type_footer-main.css);
+@import url(../blocks/section-paragraph/_type/section-paragraph_type_footer-social.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/container/footer__container.css);
+@import url(../blocks/footer/column-link/footer__column-link.css);
+@import url(../blocks/footer/logo-item/footer__logo-item.css);
+@import url(../blocks/footer/logo-zone/footer__logo-zone.css);
+@import url(../blocks/footer/social-icon/footer__social-icon.css);
+@import url(../blocks/footer/message/footer__message.css);
+
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__container/about__container.css);
