@@ -4,7 +4,9 @@
 @import url(../blocks/page/_fixed/page_fixed.css);
 
 @import url(../blocks/section-heading/section-heading.css);
+@import url(../blocks/section-heading/_theme/section-heading_theme_dark.css);
 @import url(../blocks/section-paragraph/section-paragraph.css);
+@import url(../blocks/section-paragraph/_theme/section-paragraph_theme_dark.css);
 @import url(../blocks/section-paragraph/_type/section-paragraph_type_footer-main.css);
 @import url(../blocks/section-paragraph/_type/section-paragraph_type_footer-social.css);
 @import url(../blocks/section-paragraph/_type/section-paragraph_type_skills-main.css);
@@ -19,7 +21,6 @@
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__container/about__container.css);
-@import url(../blocks/about/__section-heading/about__section-heading.css);
 
 @import url(../blocks/skills/skills.css);
 @import url(../blocks/skills/conatainer/skills__container.css);
