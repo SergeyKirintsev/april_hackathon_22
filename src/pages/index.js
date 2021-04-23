@@ -1,5 +1,5 @@
 'use strict';
-import '../pages/index.css';
+import './index.css';
 
 console.log("test");
 console.log("GREEN")
