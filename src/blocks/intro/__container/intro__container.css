@@ -1,0 +1,6 @@
+.intro__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40px 0;
+}

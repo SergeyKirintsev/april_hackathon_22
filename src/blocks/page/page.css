@@ -10,4 +10,9 @@
   --secondaryColor: #f6f6f6;
   --mainTextColor: #070707;
   --secondaryTextColor: #828282;
+
+  min-width: 320px;
+  max-width: 940px;
+  margin: 0 auto;
+
 }

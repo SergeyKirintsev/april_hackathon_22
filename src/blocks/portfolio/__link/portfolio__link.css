@@ -1,12 +1,8 @@
-.section-paragraph {
-  margin: 0 auto 50px;
+.portfolio__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
+  text-decoration-line: underline;
   color: var(--mainTextColor);
-}
-
-.section-paragraph:last-of-type {
-  margin: 0;
 }
