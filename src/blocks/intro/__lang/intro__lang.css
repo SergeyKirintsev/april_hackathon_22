@@ -3,5 +3,6 @@
   margin: 0;
   padding: 0;
   display: flex;
-  transform: rotate(-90deg) translate(30px, 25px);
+  transform: rotate(-90deg);
+  max-width: fit-content;
 }
