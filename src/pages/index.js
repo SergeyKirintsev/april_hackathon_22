@@ -30,7 +30,7 @@ const page = document.querySelector(".page");
 const startPopup = page.querySelector(".start-popup");
 const startPopupTitle = startPopup.querySelector(".start-popup__title");
 const mainTitle = document.querySelector(".intro__title");
-const photoCards = document.querySelectorAll(".card");
+const photoCardContainer = document.querySelector(".intro__cards");
 
 (function removeStartPopup() {
   page.classList.add("page_fixed");
@@ -43,7 +43,9 @@ const photoCards = document.querySelectorAll(".card");
       startPopup.remove();
       page.classList.remove("page_fixed");
       mainTitle.classList.add("anim-text-focus-in");
-      photoCards.forEach((card) => card.classList.add("anim-text-focus-in"));
+      setTimeout(() => {
+        photoCardContainer.classList.add("anim-text-focus-in");
+      }, 1000);
     }, 1000);
   });
 
