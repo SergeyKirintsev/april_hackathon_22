@@ -24,3 +24,30 @@ menuLang.addEventListener("click", (evt) => {
   menuLangItems.forEach((el) => el.classList.remove("intro__lang-link_active"));
   evt.target.classList.add("intro__lang-link_active");
 });
+
+//стартовый попап
+const startPopup = document.querySelector(".start-popup");
+const startPopupTitle = startPopup.querySelector(".start-popup__title");
+
+(function removeStartPopup() {
+  playAnimation()
+    .then(() => playAnimation(1000, startPopup, "start-popup_hidden"))
+    .then(() => {
+      setTimeout(() => {
+        startPopup.remove();
+      }, 1000);
+    });
+
+  function playAnimation(
+    delay = 3000,
+    element = startPopupTitle,
+    animClass = "start-popup__title_hidden",
+  ) {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        element.classList.add(animClass);
+        resolve();
+      }, delay);
+    });
+  }
+})();
