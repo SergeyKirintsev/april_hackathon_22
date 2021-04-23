@@ -1,0 +1,9 @@
+.skills__program-caption{
+    text-align: center;
+    width: 70px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--secondaryTextColor);
+}

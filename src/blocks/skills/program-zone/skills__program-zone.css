@@ -1,0 +1,9 @@
+.skills__program-zone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 85px;
+    padding: 0 0;
+}
