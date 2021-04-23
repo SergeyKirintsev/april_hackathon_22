@@ -7,17 +7,20 @@
 @import url(../blocks/section-heading/_theme/section-heading_theme_dark.css);
 @import url(../blocks/section-paragraph/section-paragraph.css);
 @import url(../blocks/section-paragraph/_theme/section-paragraph_theme_dark.css);
-@import url(../blocks/section-paragraph/_type/section-paragraph_type_footer-main.css);
 @import url(../blocks/section-paragraph/_type/section-paragraph_type_footer-social.css);
 @import url(../blocks/section-paragraph/_type/section-paragraph_type_skills-main.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/container/footer__container.css);
-@import url(../blocks/footer/column-link/footer__column-link.css);
 @import url(../blocks/footer/logo-item/footer__logo-item.css);
 @import url(../blocks/footer/logo-zone/footer__logo-zone.css);
 @import url(../blocks/footer/social-icon/footer__social-icon.css);
 @import url(../blocks/footer/message/footer__message.css);
+@import url(../blocks/footer/link-zone/footer__link-zone.css);
+@import url(../blocks/footer/link-item/footer__link-item.css);
+@import url(../blocks/footer/link/footer__link.css);
+@import url(../blocks/footer/social-subicon/footer__social-subicon.css);
+@import url(../blocks/footer/link-name/footer__link-name.css);
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__container/about__container.css);
@@ -74,3 +77,15 @@
 @import url(../blocks/anim-scale-out-horizontal/anim-scale-out-horizontal.css);
 @import url(../blocks/anim-text-focus-in/anim-text-focus-in.css);
 @import url(../blocks/anim-flicker/anim-flicker.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__caption/popup__caption.css);
+@import url(../blocks/popup/__close/popup__close.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__field/popup__field.css);
+@import url(../blocks/popup/__header/popup__header.css);
+@import url(../blocks/popup/__input/_type/popup__input_type_info.css);
+@import url(../blocks/popup/__input/popup__input.css);
+@import url(../blocks/popup/__submit/popup__submit.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+

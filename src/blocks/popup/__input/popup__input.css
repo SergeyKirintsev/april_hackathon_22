@@ -1,0 +1,21 @@
+.popup__input{
+    min-height: 27px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--mainTextColor);
+    border: none;
+    outline-style: none; 
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    padding: 0 0;
+    width: 100%;
+}
+
+
+::-webkit-input-placeholder {
+    color: #C4C4C4;
+  }
+
+

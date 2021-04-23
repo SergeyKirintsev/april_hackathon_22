@@ -292,49 +292,59 @@
       <div class="footer__container">
         <h2 class="section-heading">Contacts</h2>
         <p class="section-paragraph section-paragraph_type_footer-main">
-          Want to know more or just chat? You are welcome!
+          Want to know more? You&nbsp;are&nbsp;welcome!
         </p>
         <button class="footer__message">Send message</button>
         <ul class="footer__logo-zone">
           <li class="footer__logo-item">
-            <a href="#" class="footer__column-link" target="_blank">
-              <img
-                src="<%=require('./images/logo/linkedin.svg')%>"
-                alt="Логотип linkedIn"
-                class="footer__social-icon"
-              />
-            </a>
+              <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram" class="footer__social-icon"/>
+              <ul class="footer__link-zone">
+                <li class="footer__link-item">
+                  <a href="https://t.me/elaineirr" class="footer__link" target="_blank">
+                    <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram"  class="footer__social-subicon"/>
+                  </a>
+                  <p class="footer__link-name">Alyona Irisova</p>
+                </li>
+                <li class="footer__link-item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram"  class="footer__social-subicon"/>
+                  </a>
+                  <p class="footer__link-name">Sergey Kirintsev</p>
+                </li>
+                <li class="footer__link-item">
+                  <a href="https://t.me/dm_parf" class="footer__link" target="_blank">
+                    <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram"  class="footer__social-subicon"/>
+                  </a>
+                  <p class="footer__link-name">Dmitry Parfenyev</p>
+                </li>
+              </ul>
           </li>
           <li class="footer__logo-item">
-            <a href="#" class="footer__column-link" target="_blank">
-              <img
-                src="<%=require('./images/logo/instagram.svg')%>"
-                alt="Логотип instagram"
-                class="footer__social-icon"
-              />
-            </a>
-          </li>
-          <li class="footer__logo-item">
-            <a href="#" class="footer__column-link" target="_blank">
-              <img
-                src="<%=require('./images/logo/behance.svg')%>"
-                alt="Логотип behance"
-                class="footer__social-icon"
-              />
-            </a>
-          </li>
-          <li class="footer__logo-item">
-            <a href="#" class="footer__column-link" target="_blank">
-              <img
-                src="<%=require('./images/logo/dribble.svg')%>"
-                alt="Логотип dribble"
-                class="footer__social-icon"
-              />
-            </a>
+              <img src="<%=require('./images/logo/instagram.svg')%>" alt="Логотип instagram" class="footer__social-icon"/>
+              <ul class="footer__link-zone">
+                <li class="footer__link-item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <img src="<%=require('./images/logo/instagram.svg')%>" alt="Логотип instagram"  class="footer__social-subicon"/>
+                  </a>
+                  <p class="footer__link-name">Alyona Irisova</p>
+                </li>
+                <li class="footer__link-item">
+                  <a href="#" class="footer__link" target="_blank">
+                    <img src="<%=require('./images/logo/instagram.svg')%>"alt="Логотип instagram"  class="footer__social-subicon"/>
+                  </a>
+                  <p class="footer__link-name">Sergey Kirintsev</p>
+                </li>
+                <li class="footer__link-item">
+                  <a href="https://www.instagram.com/grechka472/" class="footer__link" target="_blank">
+                    <img src="<%=require('./images/logo/instagram.svg')%>" alt="Логотип instagram"  class="footer__social-subicon"/>
+                  </a>
+                  <p class="footer__link-name">Dmitry Parfenyev</p>
+                </li>
+              </ul>
           </li>
         </ul>
         <p class="section-paragraph section-paragraph_type_footer-social">
-          Like me on LinkedIn,&nbsp;Instagram,&nbsp;Behance,&nbsp;Dribble
+          Like us or write in social networks
         </p>
       </div>
     </footer>
@@ -344,5 +354,25 @@
         <h2 class="start-popup__title">Greens</h2>
       </div>
     </article>
+
+    <section class="popup">
+      <form class="popup__container" name="popup-edit" novalidate>
+        <button class="popup__close" type="button"></button>
+        <h2 class="popup__header">Contact us</h2>
+        <label class="popup__field">
+          <input class="popup__input" placeholder="Name" type="text" name="user-name" minlength="2" maxlength="40" required>
+        </label>
+        <label class="popup__field">
+          <input class="popup__input" placeholder="Phone" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" name="user-name" minlength="2" maxlength="40" required>
+        </label>
+        <label class="popup__field">
+          <input class="popup__input" placeholder="email" type="email" name="user-name" minlength="2" maxlength="40" required>
+        </label>
+        <label class="popup__field">
+          <textarea class="popup__input popup__input_type_info" placeholder="Your text"  cols="40" rows="5" required></textarea>
+        </label>
+        <button class="popup__submit" type="submit">Send</button>
+      </form>
+    </section>
   </body>
 </html>

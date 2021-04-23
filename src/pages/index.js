@@ -58,3 +58,47 @@ const photoCardContainer = document.querySelector(".intro__cards");
     });
   }
 })();
+
+
+const messageBtn = document.querySelector('.footer__message');
+
+const popupEdit = document.querySelector('.popup');
+let popupCloseBtn = popupEdit.querySelector('.popup__close');
+let popupEditContainer = popupEdit.querySelector('.popup__container');
+
+addPopupListener(popupEdit);
+
+function addPopupListener(popup)
+{
+    popup.addEventListener('mousedown', function (evt) {
+      if (evt.target === popup) {
+      togglePopup(popup); 
+    }
+  }); 
+}
+
+function toggleListener(elem, popup){
+  elem.addEventListener('click', function () {
+    togglePopup(popup); 
+  });
+}
+
+function togglePopup(popupElement){
+    popupElement.classList.toggle('popup_opened')
+}
+
+function popupEditSubmitHandler (evt) {
+    evt.preventDefault(); 
+    togglePopup(popupEdit);
+}
+
+
+messageBtn.addEventListener('click', function () {
+    togglePopup(popupEdit); 
+  });  
+
+
+toggleListener(popupCloseBtn, popupEdit);
+
+  
+popupEditContainer.addEventListener('submit', popupEditSubmitHandler);
