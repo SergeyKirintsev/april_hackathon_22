@@ -26,15 +26,21 @@ menuLang.addEventListener("click", (evt) => {
 });
 
 //стартовый попап
-const startPopup = document.querySelector(".start-popup");
+const page = document.querySelector(".page");
+const startPopup = page.querySelector(".start-popup");
 const startPopupTitle = startPopup.querySelector(".start-popup__title");
 
 (function removeStartPopup() {
+  bodyLock();
+  page.classList.add('page_fixed');
+  
   playAnimation()
     .then(() => playAnimation(1000, startPopup, "start-popup_hidden"))
     .then(() => {
       setTimeout(() => {
         startPopup.remove();
+        page.classList.remove('page_fixed');
+        bodyUnlock();
       }, 1000);
     });
 
@@ -49,5 +55,14 @@ const startPopupTitle = startPopup.querySelector(".start-popup__title");
         resolve();
       }, delay);
     });
+  }
+
+  function bodyLock() {
+    const paddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+    page.style.paddingRight = paddingValue;
+  }
+
+  function bodyUnlock() {
+    page.style.paddingRight = '0';
   }
 })();
