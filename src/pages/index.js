@@ -29,6 +29,7 @@ menuLang.addEventListener("click", (evt) => {
 const page = document.querySelector(".page");
 const startPopup = page.querySelector(".start-popup");
 const startPopupTitle = startPopup.querySelector(".start-popup__title");
+const mainTitle = document.querySelector(".intro__title");
 
 (function removeStartPopup() {
   page.classList.add("page_fixed");
@@ -37,11 +38,12 @@ const startPopupTitle = startPopup.querySelector(".start-popup__title");
     playAnimation(3000, startPopupTitle, "start-popup__title_hidden"),
     playAnimation(3100, startPopup, "start-popup_hidden"),
   ]).then(() => {
-    setTimeout(() => {
-      startPopup.remove();
-      page.classList.remove("page_fixed");
-    }, 1000);
-  });
+      setTimeout(() => {
+        startPopup.remove();
+        page.classList.remove("page_fixed");
+        mainTitle.classList.add('anim-text-focus-in');
+      }, 1000);
+    });
 
   function playAnimation(delay, element, animClass) {
     return new Promise((resolve) => {

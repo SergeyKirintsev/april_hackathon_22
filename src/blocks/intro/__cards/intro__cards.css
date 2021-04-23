@@ -1,6 +1,13 @@
 .intro__cards {
-  margin-top: 40px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
+
+@media screen and (max-width: 768px) {
+  .intro__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
