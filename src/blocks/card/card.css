@@ -1,0 +1,21 @@
+.card {
+  position: relative;
+  margin-left: 30px;
+  max-width: 300px;
+  background-color: var(--secondaryColor);
+  box-shadow: -12px 0 20px -12px rgba(0, 0, 0, 0.35), 12px 0 20px -12px rgba(0, 0, 0, 0.35);
+}
+
+.card:last-of-type {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .card:last-of-type {
+    margin-bottom: 0;
+  }
+}

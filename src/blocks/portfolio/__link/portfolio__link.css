@@ -14,7 +14,7 @@
   text-align: center;
   text-decoration: none;
   color: var(--lightTextColor);
-  background-color: #2E8B57;
+  background-color: var(--mainComponColor);
   border-radius: 0 10px 0 0;
   transition: .3s linear;
 }
@@ -22,12 +22,13 @@
 .portfolio__project:hover .portfolio__link {
   width: 100%;
   height: 100%;
-  color: #FF7F50;
+  color: var(--secondaryComponColor);
   font-size: 36px;
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, .85);
+  border: 5px dotted var(--secondaryComponColor);
   border-radius: 0;
 }
 

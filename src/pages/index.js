@@ -25,10 +25,12 @@ menuLang.addEventListener("click", (evt) => {
   evt.target.classList.add("intro__lang-link_active");
 });
 
-//стартовый попап
+//стартовый попап и карточки
 const page = document.querySelector(".page");
 const startPopup = page.querySelector(".start-popup");
 const startPopupTitle = startPopup.querySelector(".start-popup__title");
+const mainTitle = document.querySelector(".intro__title");
+const photoCardContainer = document.querySelector(".intro__cards");
 
 (function removeStartPopup() {
   page.classList.add("page_fixed");
@@ -40,6 +42,10 @@ const startPopupTitle = startPopup.querySelector(".start-popup__title");
     setTimeout(() => {
       startPopup.remove();
       page.classList.remove("page_fixed");
+      mainTitle.classList.add("anim-text-focus-in");
+      setTimeout(() => {
+        photoCardContainer.classList.add("anim-text-focus-in");
+      }, 1000);
     }, 1000);
   });
 

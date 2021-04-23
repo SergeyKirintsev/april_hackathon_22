@@ -1,0 +1,4 @@
+.section-heading_theme_dark {
+  color: var(--lightTextColor);
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}

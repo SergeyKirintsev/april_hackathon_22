@@ -1,0 +1,11 @@
+.card__image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  transition: .5s ease;
+}
+
+.card:hover .card__image {
+  opacity: .5;
+  transform: translateX(30%);
+}

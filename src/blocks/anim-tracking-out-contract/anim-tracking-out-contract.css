@@ -12,5 +12,5 @@
 }
 
 .anim-tracking-out-contract {
-  animation: tracking-out-contract 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: tracking-out-contract 0.7s ease both;
 }
