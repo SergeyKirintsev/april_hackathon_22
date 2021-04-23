@@ -6,6 +6,7 @@
   font-size: 46px;
   line-height: 1.24;
   text-align: center;
+  user-select: none;
   color: var(--mainTextColor);
   z-index: 0;
 }
@@ -21,4 +22,8 @@
   height: 12px;
   background-color: var(--mainComponColor);
   z-index: -1;
+}
+
+.section-heading:hover {
+  animation: flicker 2s linear infinite both;
 }

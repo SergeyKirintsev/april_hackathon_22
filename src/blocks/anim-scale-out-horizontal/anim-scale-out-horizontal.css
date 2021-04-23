@@ -10,5 +10,5 @@
 }
 
 .anim-scale-out-horizontal {
-  animation: scale-out-horizontal 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: scale-out-horizontal 0.5s ease both;
 }
