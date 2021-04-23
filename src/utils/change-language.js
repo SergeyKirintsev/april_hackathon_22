@@ -1,11 +1,13 @@
 const dictionaryRu = {
   "first-name": "Денис",
   "last-name": "Новик",
+  about: "Обо мне",
 };
 
 const dictionaryEng = {
   "first-name": "Denis",
   "last-name": "Novik",
+  about: "About me",
 };
 
 const changeLang = (lng) => {
