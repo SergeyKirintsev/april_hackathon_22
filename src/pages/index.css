@@ -29,4 +29,5 @@
 @import url(../blocks/intro/__lang/intro__lang.css);
 @import url(../blocks/intro/__lang-link/intro__lang-link.css);
 @import url(../blocks/intro/__lang-link/_active/intro__lang-link_active.css);
+@import url(../blocks/intro/__lang-link/_delimiter/intro__lang-link_delimiter.css);
 @import url(../blocks/intro/__img/intro__img.css);
