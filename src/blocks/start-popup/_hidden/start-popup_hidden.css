@@ -1,4 +1,4 @@
 .start-popup_hidden {
   animation: color-change-3x 4s linear infinite alternate both,
-    scale-out-horizontal 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    scale-out-horizontal 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
