@@ -1,0 +1,9 @@
+.start-popup__title {
+  font-family: Cybero, Arial, sans-serif;
+  color: #fff;
+  font-size: 134px;
+  font-weight: 400;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both,
+    text-pop-up-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  user-select: none;
+}
