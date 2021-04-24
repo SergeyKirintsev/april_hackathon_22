@@ -38,8 +38,8 @@ const startPopup = page.querySelector(".start-popup");
 const startPopupTitle = startPopup.querySelector(".start-popup__title");
 const header = page.querySelector(".header");
 const intro = page.querySelector(".intro");
-const mainTitle = document.querySelector(".intro__title");
-const photoCardContainer = document.querySelector(".intro__cards");
+const mainTitle = page.querySelector(".intro__title");
+const photoCardContainer = page.querySelector(".intro__cards");
 
 (function removeStartPopup() {
   page.classList.add("page_preload");
@@ -131,7 +131,7 @@ for (let anchor of anchors) {
     const gotoBlockValue =
       gotoBlock.getBoundingClientRect().top +
       pageYOffset -
-      document.querySelector(".header").offsetHeight;
+      header.offsetHeight;
     window.scrollTo({
       top: gotoBlockValue,
       behavior: "smooth",
