@@ -1,4 +1,9 @@
 .skills__program-item{
     list-style-type: none;
     margin: 0 30px 0 30px;
+    transition: 1s linear .1s;
+}
+
+.skills__program-item:hover {
+    transform: scale(1.5); /*вот так*/
 }
