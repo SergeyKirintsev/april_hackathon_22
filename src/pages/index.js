@@ -78,7 +78,7 @@ const iconMenu = document.querySelector(".header__menu-icon");
 const headerMenu = document.querySelector(".header__menu");
 if(iconMenu)
 {
-    
+
     iconMenu.addEventListener("click", function(e) {
         page.classList.toggle("page_lock");
         iconMenu.classList.toggle("header__menu-icon_active");
@@ -140,3 +140,21 @@ for (let anchor of anchors) {
 }
 
 changeLang("RU");
+
+const targetElements = document.querySelectorAll("h2[id]");
+const menuHeight = document.querySelector(".header").offsetHeight;
+
+const checkScroll = () => {
+  let menuPosition = 0;
+  targetElements.forEach((el) => {
+    if (pageYOffset + menuHeight >= el.offsetTop - menuHeight) menuPosition++; //тут надо ещё вычесть высоту фиксированного хедера, чтобы точно определял
+  });
+  menuItems.forEach((el) => el.classList.remove("header__link_active"));
+  menuItems[menuPosition].classList.add("header__link_active");
+  if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) { //юзер доскроллил до конца страницы
+    menuItems.forEach((el) => el.classList.remove("header__link_active"));
+    menuItems[menuItems.length - 1].classList.add("header__link_active");
+  }
+};
+
+window.addEventListener("scroll", checkScroll);
