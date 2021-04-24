@@ -6,7 +6,3 @@
   text-align: center;
   color: var(--mainTextColor);
 }
-
-.section-paragraph:last-of-type {
-  margin: 0;
-}
