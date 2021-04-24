@@ -29,11 +29,15 @@ menuLang.addEventListener("click", (evt) => {
 const page = document.querySelector(".page");
 const startPopup = page.querySelector(".start-popup");
 const startPopupTitle = startPopup.querySelector(".start-popup__title");
+const header = page.querySelector(".header");
+const intro = page.querySelector(".intro");
 const mainTitle = document.querySelector(".intro__title");
 const photoCardContainer = document.querySelector(".intro__cards");
 
 (function removeStartPopup() {
-  page.classList.add("page_fixed");
+  page.classList.add("page_preload");
+  header.classList.add("header_preload");
+  intro.classList.add("intro_preload");
 
   Promise.all([
     playAnimation(3000, startPopupTitle, "start-popup__title_hidden"),
@@ -41,8 +45,10 @@ const photoCardContainer = document.querySelector(".intro__cards");
   ]).then(() => {
     setTimeout(() => {
       startPopup.remove();
-      page.classList.remove("page_fixed");
+      page.classList.remove("page_preload");
+      header.classList.remove("header_preload");
       mainTitle.classList.add("anim-text-focus-in");
+      intro.classList.remove("intro_preload");
       setTimeout(() => {
         photoCardContainer.classList.add("anim-text-focus-in");
       }, 1000);
