@@ -1,13 +1,17 @@
 const dictionaryRu = {
-  "first-name": "Денис",
-  "last-name": "Новик",
-  about: "Обо мне",
+  "menu-home": "Домой",
+  "menu-about": "О нас",
+  "menu-skills": "Навыки",
+  "menu-portfolio": "Портфолио",
+  "menu-contacts": "Контакты",
 };
 
 const dictionaryEng = {
-  "first-name": "Denis",
-  "last-name": "Novik",
-  about: "About me",
+  "menu-home": "Home",
+  "menu-about": "About us",
+  "menu-skills": "Skills",
+  "menu-portfolio": "Portfolio",
+  "menu-contacts": "Contacts",
 };
 
 const changeLang = (lng) => {
