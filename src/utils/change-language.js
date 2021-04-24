@@ -4,6 +4,10 @@ const dictionaryRu = {
   "menu-skills": "Навыки",
   "menu-portfolio": "Портфолио",
   "menu-contacts": "Контакты",
+  about: "О нас",
+  skills: "Навыки",
+  portfolio: "Портфолио",
+  contacts: "Контакты",
 };
 
 const dictionaryEng = {
@@ -12,6 +16,10 @@ const dictionaryEng = {
   "menu-skills": "Skills",
   "menu-portfolio": "Portfolio",
   "menu-contacts": "Contacts",
+  about: "About us",
+  skills: "Skills",
+  portfolio: "Portfolio",
+  contacts: "Contacts",
 };
 
 const changeLang = (lng) => {
