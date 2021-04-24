@@ -1,5 +1,6 @@
 .card__experience {
-  margin: 0 auto 15px;
+  margin: 0 auto;
+  font-size: 16px;
   text-align: center;
   color: var(--mainTextColor);
 }
