@@ -5,3 +5,9 @@
   font-weight: 700;
   color: var(--secondaryTextColor);
 }
+
+@media (max-width: 767px){
+  .header__link {
+    margin-top: 30px;
+  }
+}

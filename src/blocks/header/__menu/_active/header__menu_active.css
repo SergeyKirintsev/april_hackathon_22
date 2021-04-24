@@ -1,0 +1,6 @@
+@media (max-width: 767px){
+        .header__menu_active{
+        background-color: var(--mainColor);
+        left:0;
+    }
+}

@@ -12,6 +12,13 @@ const menuLangItems = document.querySelectorAll(".intro__lang-link");
 menu.addEventListener("click", (evt) => {
   menuItems.forEach((el) => el.classList.remove("header__link_active"));
   evt.target.classList.add("header__link_active");
+
+  if(iconMenu.classList.contains("header__menu-icon_active"))
+  {
+        page.classList.remove("page_lock");
+        iconMenu.classList.remove("header__menu-icon_active");
+        headerMenu.classList.remove("header__menu_active");
+  }
 });
 
 menuLang.addEventListener("click", (evt) => {
@@ -64,6 +71,20 @@ const photoCardContainer = document.querySelector(".intro__cards");
     });
   }
 })();
+
+//работа меню в режиме бургер
+
+const iconMenu = document.querySelector(".header__menu-icon");
+const headerMenu = document.querySelector(".header__menu");
+if(iconMenu)
+{
+    
+    iconMenu.addEventListener("click", function(e) {
+        page.classList.toggle("page_lock");
+        iconMenu.classList.toggle("header__menu-icon_active");
+        headerMenu.classList.toggle("header__menu_active");
+    } )
+}
 
 //попап отправки сообщения на почту команды
 const messageBtn = document.querySelector(".footer__message");
