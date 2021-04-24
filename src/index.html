@@ -10,11 +10,11 @@
       <div class="header__container">
         <nav class="header__menu">
           <ul class="header__links">
-            <li><a id="menu-home" href="#home" class="header__link header__link_active" target="_self">Home</a></li>
-            <li><a id="menu-about" href="#about" class="header__link" target="_self">About us</a></li>
-            <li><a id="menu-skills" href="#skills" class="header__link" target="_self">Skills</a></li>
-            <li><a id="menu-portfolio" href="#portfolio" class="header__link" target="_self">Portfolio</a></li>
-            <li><a id="menu-contacts" href="#contacts" class="header__link" target="_self">Contacts</a></li>
+            <li><a data-lang="menu-home" href="#home" class="header__link header__link_active" target="_self">Домой</a></li>
+            <li><a data-lang="menu-about" href="#about" class="header__link" target="_self">О нас</a></li>
+            <li><a data-lang="menu-skills" href="#skills" class="header__link" target="_self">Навыки</a></li>
+            <li><a data-lang="menu-portfolio" href="#portfolio" class="header__link" target="_self">Портфолио</a></li>
+            <li><a data-lang="menu-contacts" href="#contacts" class="header__link" target="_self">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -26,10 +26,10 @@
           <div class="intro__title-container">
             <h1 class="intro__title">Greens</h1>
             <ul class="intro__lang">
-              <li><a href="#" class="intro__lang-link" target="_self">RU</a></li>
+              <li><a href="#" class="intro__lang-link intro__lang-link_active" target="_self">RU</a></li>
               <li class="intro__lang-link intro__lang-link_delimiter">|</li>
               <li>
-                <a href="#" class="intro__lang-link intro__lang-link_active" target="_self">ENG</a>
+                <a href="#" class="intro__lang-link" target="_self">ENG</a>
               </li>
             </ul>
           </div>
@@ -44,10 +44,10 @@
               </div>
               <div class="card__details">
                 <div class="card__wrapper">
-                  <h2 class="card__name">Alyona Irisova</h2>
-                  <p class="card__position">frontend developer</p>
-                  <p class="card__experience">
-                    Lorem ipsum is simple dummy text on the printing and typesetting industry.
+                  <h2 class="card__name" data-lang="card-name-alyona">Алёна Ирисова</h2>
+                  <p class="card__position" data-lang="card-position-alyona">фронтенд-разработчик</p>
+                  <p class="card__experience" data-lang="card-experience-alyona">
+                    четыре года в дизайне, полгода во фронтенд-разработке
                   </p>
                 </div>
               </div>
@@ -61,10 +61,10 @@
               </div>
               <div class="card__details">
                 <div class="card__wrapper">
-                  <h2 class="card__name">Sergey Kirintsev</h2>
-                  <p class="card__position">frontend developer</p>
-                  <p class="card__experience">
-                    Lorem ipsum is simple dummy text on the printing and typesetting industry.
+                  <h2 class="card__name" data-lang="card-name-sergey">Сергей Киринцев</h2>
+                  <p class="card__position" data-lang="card-position-sergey">фронтенд-разработчик</p>
+                  <p class="card__experience" data-lang="card-experience-sergey">
+                    добавить описание
                   </p>
                 </div>
               </div>
@@ -78,10 +78,10 @@
               </div>
               <div class="card__details">
                 <div class="card__wrapper">
-                  <h2 class="card__name">Dmitriy Parfentyev</h2>
-                  <p class="card__position">frontend developer</p>
-                  <p class="card__experience">
-                    Lorem ipsum is simple dummy text on the printing and typesetting industry.
+                  <h2 class="card__name" data-lang="card-name-dmitriy">Дмитрий Парфентьев</h2>
+                  <p class="card__position" data-lang="card-position-dmitriy">фронтенд-разработчик</p>
+                  <p class="card__experience" data-lang="card-experience-dmitriy">
+                    добавить описание
                   </p>
                 </div>
               </div>
@@ -92,27 +92,26 @@
 
       <section class="about">
         <div class="about__container">
-          <h2 id="about" class="section-heading section-heading_theme_dark">About us</h2>
-          <p class="section-paragraph section-paragraph_theme_dark">
-            Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything
-            connected with it.
+          <h2 id="about" class="section-heading section-heading_theme_dark" data-lang="about">О нас</h2>
+          <p class="section-paragraph section-paragraph_theme_dark" data-lang="about-first-parag">
+            Мы молодая и дружная команда веб-разработчиков на пути к покорению новых вершин во фронтенде.
           </p>
 
-          <p class="section-paragraph section-paragraph_theme_dark">
-            I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
+          <p class="section-paragraph section-paragraph_theme_dark" data-lang="about-second-parag">
+            Мы постоянно учимся и совершенствуемся, принимаем участие в разнообразных конкурсах и мероприятиях, учимся у гуру фронтенда и разрабатываем собственные проекты.
           </p>
 
-          <p class="section-paragraph section-paragraph_theme_dark">
-            Ready to implement excellent projects with wonderful people.
+          <p class="section-paragraph section-paragraph_theme_dark" data-lang="about-third-parag">
+            Разработаем и реализуем фронтенд и для Вашего проекта тоже :)
           </p>
         </div>
       </section>
 
       <section class="skills">
         <div class="skills__container">
-          <h2 id="skills" class="section-heading">Skills</h2>
-          <p class="section-paragraph section-paragraph_type_skills-main">
-            We work with the technologies and programs as
+          <h2 id="skills" class="section-heading" data-lang="skills">Навыки</h2>
+          <p class="section-paragraph section-paragraph_type_skills-main" data-lang="skills-intro">
+            Мы работаем с такими технологиями и программами, как:
           </p>
           <ul class="skills__program-zone">
             <li class="skills__program-item">
@@ -185,14 +184,14 @@
 
       <section class="portfolio">
         <div class="portfolio__container">
-          <h2 id="portfolio" class="section-heading section-heading_theme_dark">Portfolio</h2>
+          <h2 id="portfolio" class="section-heading section-heading_theme_dark" data-lang="portfolio">Портфолио</h2>
           <ul class="portfolio__list">
             <li class="portfolio__project">
               <div class="portfolio__image-container">
                 <img
                   class="portfolio__project-image"
                   src="<%=require('./images/project-3.jpg')%>"
-                  alt="#"
+                  alt="Russian Travel"
                 />
               </div>
               <a
@@ -200,7 +199,8 @@
                 href="https://dm-parf.github.io/russian-travel/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Russian Travel</a
+                data-lang="portfolio-travel"
+                >Путешествия</a
               >
             </li>
             <li class="portfolio__project">
@@ -208,7 +208,7 @@
                 <img
                   class="portfolio__project-image"
                   src="<%=require('./images/project-5.jpg')%>"
-                  alt="#"
+                  alt="Mesto"
                 />
               </div>
               <a
@@ -216,7 +216,8 @@
                 href="https://dm-parf.github.io/mesto/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Mesto</a
+                data-lang="portfolio-mesto"
+                >Место</a
               >
             </li>
             <li class="portfolio__project">
@@ -224,7 +225,7 @@
                 <img
                   class="portfolio__project-image"
                   src="<%=require('./images/project-1.jpg')%>"
-                  alt="#"
+                  alt="Hangman Game"
                 />
               </div>
               <a
@@ -232,7 +233,8 @@
                 href="https://elaineir.github.io/hangman-game/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Hangman Game</a
+                data-lang="portfolio-hangman"
+                >Виселица</a
               >
             </li>
             <li class="portfolio__project">
@@ -240,7 +242,7 @@
                 <img
                   class="portfolio__project-image"
                   src="<%=require('./images/project-4.jpg')%>"
-                  alt="#"
+                  alt="Guess the Card"
                 />
               </div>
               <a
@@ -248,7 +250,8 @@
                 href="https://guess-the-card-87897.web.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Guess the Card</a
+                data-lang="portfolio-cards"
+                >Угадай карточку</a
               >
             </li>
             <li class="portfolio__project">
@@ -256,7 +259,7 @@
                 <img
                   class="portfolio__project-image"
                   src="<%=require('./images/project-2.jpg')%>"
-                  alt="#"
+                  alt="Virtual Piano"
                 />
               </div>
               <a
@@ -264,7 +267,8 @@
                 href="https://elaineir.github.io/piano/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Virtual Piano</a
+                data-lang="portfolio-piano"
+                >Пианино</a
               >
             </li>
             <li class="portfolio__project">
@@ -272,7 +276,7 @@
                 <img
                   class="portfolio__project-image"
                   src="<%=require('./images/project-6.jpg')%>"
-                  alt="#"
+                  alt="Memory Game"
                 />
               </div>
               <a
@@ -280,7 +284,8 @@
                 href="https://sergeykirintsev.github.io/memory-game/index.html"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Memory Game</a
+                data-lang="portfolio-memory"
+                >Тренировка памяти</a
               >
             </li>
           </ul>
@@ -290,11 +295,11 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <h2 id="contacts" class="section-heading">Contacts</h2>
-        <p class="section-paragraph section-paragraph_type_footer-main">
-          Want to know more? You&nbsp;are&nbsp;welcome!
+        <h2 id="contacts" class="section-heading" data-lang="contacts">Контакты</h2>
+        <p class="section-paragraph section-paragraph_type_footer-main" data-lang="contacts-parag">
+          Хотите узнать больше? Мы Вам очень рады!
         </p>
-        <button class="footer__message">Send message</button>
+        <button class="footer__message" data-lang="contacts-button">Отправить сообщение</button>
         <ul class="footer__logo-zone">
           <li class="footer__logo-item">
               <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram" class="footer__social-icon"/>
@@ -303,19 +308,19 @@
                   <a href="https://t.me/elaineirr" class="footer__link" target="_blank">
                     <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram"  class="footer__social-subicon"/>
                   </a>
-                  <p class="footer__link-name">Alyona Irisova</p>
+                  <p class="footer__link-name" data-lang="contacts-teleg-alyona">Алёна Ирисова</p>
                 </li>
                 <li class="footer__link-item">
                   <a href="#" class="footer__link" target="_blank">
                     <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram"  class="footer__social-subicon"/>
                   </a>
-                  <p class="footer__link-name">Sergey Kirintsev</p>
+                  <p class="footer__link-name" data-lang="contacts-teleg-sergey">Сергей Киринцев</p>
                 </li>
                 <li class="footer__link-item">
                   <a href="https://t.me/dm_parf" class="footer__link" target="_blank">
                     <img src="<%=require('./images/logo/telegram.svg')%>" alt="Логотип telegram"  class="footer__social-subicon"/>
                   </a>
-                  <p class="footer__link-name">Dmitry Parfenyev</p>
+                  <p class="footer__link-name" data-lang="contacts-teleg-dmitriy">Дмитрий Парфентьев</p>
                 </li>
               </ul>
           </li>
@@ -326,25 +331,25 @@
                   <a href="#" class="footer__link" target="_blank">
                     <img src="<%=require('./images/logo/instagram.svg')%>" alt="Логотип instagram"  class="footer__social-subicon"/>
                   </a>
-                  <p class="footer__link-name">Alyona Irisova</p>
+                  <p class="footer__link-name" data-lang="contacts-inst-alyona">Алёна Ирисова</p>
                 </li>
                 <li class="footer__link-item">
                   <a href="#" class="footer__link" target="_blank">
                     <img src="<%=require('./images/logo/instagram.svg')%>"alt="Логотип instagram"  class="footer__social-subicon"/>
                   </a>
-                  <p class="footer__link-name">Sergey Kirintsev</p>
+                  <p class="footer__link-name" data-lang="contacts-inst-sergey">Сергей Киринцев</p>
                 </li>
                 <li class="footer__link-item">
                   <a href="https://www.instagram.com/grechka472/" class="footer__link" target="_blank">
                     <img src="<%=require('./images/logo/instagram.svg')%>" alt="Логотип instagram"  class="footer__social-subicon"/>
                   </a>
-                  <p class="footer__link-name">Dmitry Parfenyev</p>
+                  <p class="footer__link-name" data-lang="contacts-inst-dmitriy">Дмитрий Парфентьев</p>
                 </li>
               </ul>
           </li>
         </ul>
-        <p class="section-paragraph section-paragraph_type_footer-social">
-          Like us or write in social networks
+        <p class="section-paragraph section-paragraph_type_footer-social" data-lang="contacts-parag-social">
+          Лайкните нас или напишите нам в социальных сетях
         </p>
       </div>
     </footer>
@@ -358,20 +363,20 @@
     <section class="popup">
       <form class="popup__container" name="popup-edit" novalidate>
         <button class="popup__close" type="button"></button>
-        <h2 class="popup__header">Contact us</h2>
+        <h2 class="popup__header" data-lang="popup-contact-header">Напишите нам</h2>
         <label class="popup__field">
-          <input class="popup__input" placeholder="Name" type="text" name="user-name" minlength="2" maxlength="40" required>
+          <input class="popup__input" data-lang="placeholder" placeholder="Имя" type="text" name="user-name" minlength="2" maxlength="40" required>
         </label>
         <label class="popup__field">
-          <input class="popup__input" placeholder="Phone" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" name="user-name" minlength="2" maxlength="40" required>
+          <input class="popup__input" data-lang="placeholder" placeholder="Телефон" type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" name="user-tel" minlength="2" maxlength="40" required>
         </label>
         <label class="popup__field">
-          <input class="popup__input" placeholder="email" type="email" name="user-name" minlength="2" maxlength="40" required>
+          <input class="popup__input" data-lang="placeholder" placeholder="Электронная почта" type="email" name="user-email" minlength="2" maxlength="40" required>
         </label>
         <label class="popup__field">
-          <textarea class="popup__input popup__input_type_info" placeholder="Your text"  cols="40" rows="5" required></textarea>
+          <textarea class="popup__input popup__input_type_info" data-lang="placeholder" placeholder="Ваш текст" name="user-textarea" cols="40" rows="5" required></textarea>
         </label>
-        <button class="popup__submit" type="submit">Send</button>
+        <button class="popup__submit" data-lang="popup-contact-sendBtn" type="submit">Отправить</button>
       </form>
     </section>
   </body>

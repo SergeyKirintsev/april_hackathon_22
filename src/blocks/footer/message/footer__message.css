@@ -1,6 +1,5 @@
 .footer__message{
-    height: 42px;
-    width: 180.5px;
+    padding: 10px 15px;
     background-color: var(--mainTextColor);
     color: var(--mainColor);
     font-size: 18px;
