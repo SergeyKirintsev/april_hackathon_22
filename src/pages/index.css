@@ -53,9 +53,9 @@
 @import url(../blocks/intro/__title-container/intro__title-container.css);
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__lang/intro__lang.css);
+@import url(../blocks/intro/__list-item/intro__list-item.css);
 @import url(../blocks/intro/__lang-link/intro__lang-link.css);
 @import url(../blocks/intro/__lang-link/_active/intro__lang-link_active.css);
-@import url(../blocks/intro/__lang-link/_delimiter/intro__lang-link_delimiter.css);
 @import url(../blocks/intro/__cards/intro__cards.css);
 
 @import url(../blocks/card/card.css);

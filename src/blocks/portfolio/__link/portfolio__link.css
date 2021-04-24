@@ -16,6 +16,7 @@
   color: var(--lightTextColor);
   background-color: var(--mainComponColor);
   border-radius: 0 10px 0 0;
+  box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.4);
   transition: .3s linear;
 }
 
@@ -30,6 +31,7 @@
   background-color: rgba(0, 0, 0, .85);
   border: 5px dotted var(--secondaryComponColor);
   border-radius: 0;
+  box-shadow: none;
 }
 
 @media screen and (max-width: 630px) {
