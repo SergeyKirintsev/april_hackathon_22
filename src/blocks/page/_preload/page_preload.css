@@ -1,0 +1,12 @@
+.page_preload {
+  position: fixed;
+  user-select: none;
+  pointer-events: none;
+  padding-right: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .page_preload {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,4 @@
+.start-popup__title_hidden {
+  animation: text-pop-up-top-revert 1s linear both,
+    tracking-out-contract 0.7s linear both;
+}

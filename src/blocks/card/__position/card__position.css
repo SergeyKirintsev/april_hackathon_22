@@ -1,0 +1,6 @@
+.card__position {
+  margin: 0 auto 15px;
+  font-size: 12px;
+  color: var(--mainTextColor);
+  text-align: center;
+}

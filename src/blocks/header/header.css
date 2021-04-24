@@ -1,6 +1,10 @@
 .header {
-  /*max-width: 940px;*/
-  /*margin: 0 auto;*/
-  padding: 33px 2%;
+  padding: 33px 0;
   border-bottom: 1px solid #828282;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--mainColor);
 }

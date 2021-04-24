@@ -1,0 +1,32 @@
+.popup__header{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--mainTextColor);
+    margin-top: 34px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+
+.popup__header::after {
+    content: '';
+    bottom: 2px;
+    left: 0;
+    display: block;
+    width: 50%;
+    margin: -8px auto;
+    height: 10px;
+    background-color: var(--mainComponColor);
+    z-index: -1;
+  }
+
+@media screen and (max-width: 767px){
+    .popup__header {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+  }

@@ -1,0 +1,9 @@
+.card__name {
+  margin: 0 auto 5px;
+  padding: 0;
+  color: var(--mainComponColor);
+  line-height: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

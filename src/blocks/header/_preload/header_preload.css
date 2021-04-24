@@ -1,0 +1,12 @@
+.header_preload {
+  position: static;
+  padding-right: 17px;
+  user-select: none;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header_preload {
+    padding-right: 0;
+  }
+}

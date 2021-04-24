@@ -1,7 +1,12 @@
 .intro__title {
-  margin: 0 0 -10px;
+  width: fit-content;
+  margin: 0 auto 40px;
   padding: 0;
-  font-size: 48px;
-  line-height: 59px;
-  color: var(--mainTextColor);
+  font-family: Cybero, Gilroy, Arial, sans-serif;
+  font-size: 84px;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--mainComponColor);
+  opacity: 0;
+  user-select: none;
 }

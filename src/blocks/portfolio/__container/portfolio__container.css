@@ -1,4 +1,11 @@
-.portfolio__container {
-  max-width: 944px;
-  margin: 0 auto;
+@media screen and (max-width: 1350px) {
+  .portfolio__container {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .portfolio__container{
+      margin: 0 15px;
+  }
 }

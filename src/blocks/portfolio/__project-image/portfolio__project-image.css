@@ -2,12 +2,9 @@
   display: block;
   width: 100%;
   object-fit: contain;
-  margin: 0 auto 45px;
+  transition: .3s linear;
 }
 
-@media screen and (max-width: 1040px) {
-  .portfolio__project-image {
-    margin: 0 auto 33px;
-  }
+.portfolio__project:hover .portfolio__project-image {
+  transform: scale(1.2);
 }
-

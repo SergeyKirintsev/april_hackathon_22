@@ -1,0 +1,22 @@
+.start-popup__title {
+  font-family: Cybero, Arial, sans-serif;
+  color: #fff;
+  font-size: 134px;
+  font-weight: 400;
+  opacity: 0;
+  animation: focus-in-contract-bck 1s linear both,
+    text-pop-up-top 1s linear both;
+  user-select: none;
+}
+
+@media screen and (max-width: 767px) {
+  .start-popup__title {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .start-popup__title {
+    font-size: 76px;
+  }
+}

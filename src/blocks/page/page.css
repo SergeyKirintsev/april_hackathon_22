@@ -6,12 +6,14 @@
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
-  --mainColor: #fff;
-  --secondaryColor: #f6f6f6;
-  --mainTextColor: #070707;
+  --mainColor: #f6f6f6;
+  --secondaryColor: #1F2029;
+  --mainTextColor: #1F2029;
   --secondaryTextColor: #828282;
-
+  --lightTextColor: #fefefe;
+  --mainComponColor: #1E9D7B;
+  --secondaryComponColor: #FF7F50;
+  box-sizing: border-box;
+  width: 100%;
   min-width: 320px;
-  max-width: 940px;
-  margin: 0 auto;
 }

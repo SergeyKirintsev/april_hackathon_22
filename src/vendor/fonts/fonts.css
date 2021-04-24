@@ -11,3 +11,10 @@
   font-family: Gilroy;
   font-weight: 700;
 }
+
+@font-face {
+  src: url(./cybero.woff2) format('woff2'),
+       url(./cybero.woff) format('woff');
+  font-family: Cybero;
+  font-weight: 400;
+}

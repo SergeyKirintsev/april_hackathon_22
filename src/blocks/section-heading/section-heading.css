@@ -1,7 +1,41 @@
 .section-heading {
+  width: fit-content;
+  position: relative;
+  margin: 0 auto 60px;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 46px;
   line-height: 1.24;
   text-align: center;
+  user-select: none;
   color: var(--mainTextColor);
+  z-index: 0;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  display: block;
+  width: 130%;
+  transform: translateX(-11%);
+  height: 12px;
+  background-color: var(--mainComponColor);
+  z-index: -1;
+}
+
+.section-heading:hover {
+  animation: flicker 2s linear infinite both;
+}
+
+@media screen and (max-width: 767px) {
+  .section-heading {
+    font-size: calc(40px + 6 * ((100vw - 320px) / 447));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-heading {
+    font-size: 40px;
+  }
 }

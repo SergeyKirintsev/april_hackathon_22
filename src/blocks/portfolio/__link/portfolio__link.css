@@ -1,8 +1,42 @@
 .portfolio__link {
+  box-sizing: border-box;
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
-  text-decoration-line: underline;
-  color: var(--mainTextColor);
+  text-decoration: none;
+  color: var(--lightTextColor);
+  background-color: var(--mainComponColor);
+  border-radius: 0 10px 0 0;
+  box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.4);
+  transition: .3s linear;
+}
+
+.portfolio__project:hover .portfolio__link {
+  width: 100%;
+  height: 100%;
+  color: var(--secondaryComponColor);
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .85);
+  border: 5px dotted var(--secondaryComponColor);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 630px) {
+  .portfolio__link {
+    width: 70%;
+    height: 15%;
+  }
 }

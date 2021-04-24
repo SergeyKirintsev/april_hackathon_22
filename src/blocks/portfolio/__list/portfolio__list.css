@@ -1,5 +1,25 @@
 .portfolio__list {
+  max-width: 1260px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 600px));
+  gap: 60px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style-type: none;
 }
+
+@media screen and (max-width: 1260px) {
+  .portfolio__list {
+    gap: calc(40px + 20 * ((100vw - 1024px) / 236));
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .portfolio__list {
+    max-width: fit-content;
+    gap: 40px;
+    grid-template-columns: minmax(200px, 600px);
+  }
+}
+
