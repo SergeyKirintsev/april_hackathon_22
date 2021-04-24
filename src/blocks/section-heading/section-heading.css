@@ -27,3 +27,15 @@
 .section-heading:hover {
   animation: flicker 2s linear infinite both;
 }
+
+@media screen and (max-width: 767px) {
+  .section-heading {
+    font-size: calc(40px + 6 * ((100vw - 320px) / 447));
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section-heading {
+    font-size: 40px;
+  }
+}
