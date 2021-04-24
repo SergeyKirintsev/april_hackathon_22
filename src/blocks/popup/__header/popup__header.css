@@ -9,12 +9,24 @@
     text-align: center;
 }
 
+
+.popup__header::after {
+    content: '';
+    bottom: 2px;
+    left: 0;
+    display: block;
+    width: 40%;
+    margin: -8px auto;
+    height: 10px;
+    background-color: var(--mainComponColor);
+    z-index: -1;
+  }
+
 @media screen and (max-width: 767px){
     .popup__header {
         font-size: 18px;
         line-height: 22px;
         margin-top: 25px;
-        margin-left: 22px;
-        margin-bottom: 75px;
+        margin-bottom: 30px;
     }
   }

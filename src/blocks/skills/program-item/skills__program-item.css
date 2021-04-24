@@ -1,4 +1,41 @@
+ @-webkit-keyframes rotate-scale-up-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateY(180deg);
+              transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+  @keyframes rotate-scale-up-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateY(180deg);
+              transform: scale(2) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+  
+
 .skills__program-item{
     list-style-type: none;
-    margin: 0 30px 0 30px;
+    margin: 0 20px 0 20px;
+    transition: 1s linear .1s;
+}
+
+.skills__program-item:hover {
+    /* transform: scale(1.5);  */
+    -webkit-animation: rotate-scale-up-ver 0.65s linear both;
+    animation: rotate-scale-up-ver 0.65s linear both;
 }
