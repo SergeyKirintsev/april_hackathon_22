@@ -59,46 +59,57 @@ const photoCardContainer = document.querySelector(".intro__cards");
   }
 })();
 
+const messageBtn = document.querySelector(".footer__message");
 
-const messageBtn = document.querySelector('.footer__message');
-
-const popupEdit = document.querySelector('.popup');
-let popupCloseBtn = popupEdit.querySelector('.popup__close');
-let popupEditContainer = popupEdit.querySelector('.popup__container');
+const popupEdit = document.querySelector(".popup");
+let popupCloseBtn = popupEdit.querySelector(".popup__close");
+let popupEditContainer = popupEdit.querySelector(".popup__container");
 
 addPopupListener(popupEdit);
 
-function addPopupListener(popup)
-{
-    popup.addEventListener('mousedown', function (evt) {
-      if (evt.target === popup) {
-      togglePopup(popup); 
+function addPopupListener(popup) {
+  popup.addEventListener("mousedown", function (evt) {
+    if (evt.target === popup) {
+      togglePopup(popup);
     }
-  }); 
-}
-
-function toggleListener(elem, popup){
-  elem.addEventListener('click', function () {
-    togglePopup(popup); 
   });
 }
 
-function togglePopup(popupElement){
-    popupElement.classList.toggle('popup_opened')
+function toggleListener(elem, popup) {
+  elem.addEventListener("click", function () {
+    togglePopup(popup);
+  });
 }
 
-function popupEditSubmitHandler (evt) {
-    evt.preventDefault(); 
-    togglePopup(popupEdit);
+function togglePopup(popupElement) {
+  popupElement.classList.toggle("popup_opened");
 }
 
+function popupEditSubmitHandler(evt) {
+  evt.preventDefault();
+  togglePopup(popupEdit);
+}
 
-messageBtn.addEventListener('click', function () {
-    togglePopup(popupEdit); 
-  });  
-
+messageBtn.addEventListener("click", function () {
+  togglePopup(popupEdit);
+});
 
 toggleListener(popupCloseBtn, popupEdit);
 
-  
-popupEditContainer.addEventListener('submit', popupEditSubmitHandler);
+popupEditContainer.addEventListener("submit", popupEditSubmitHandler);
+
+const anchors = document.querySelectorAll('a[href^="#"]');
+
+// Цикл по всем ссылкам
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (evt) {
+    evt.preventDefault(); // Предотвратить стандартное поведение ссылок
+    // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+    const goto = anchor.hasAttribute("href") ? anchor.getAttribute("href") : "body";
+    // Плавная прокрутка до элемента с id = href у ссылки
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
