@@ -1,0 +1,17 @@
+.intro__list-item {
+  position: relative;
+  margin-right: 8px;
+}
+
+.intro__list-item::after {
+  content: '|';
+  position: absolute;
+  top: 0;
+  right: -6px;
+  color: var(--mainTextColor);
+  user-select: none;
+}
+
+.intro__list-item:last-of-type:after {
+  content: '';
+}

@@ -1,8 +1,20 @@
 .intro__lang {
+  position: absolute;
+  top: 40%;
+  right: 5px;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   transform: rotate(-90deg);
   max-width: fit-content;
+  transition: .3s linear;
+}
+
+@media screen and (max-width: 1250px) {
+  .intro__lang {
+    top: 0;
+    right: 5px;
+    transform: rotate(0deg);
+  }
 }

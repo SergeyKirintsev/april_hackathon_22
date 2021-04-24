@@ -104,7 +104,11 @@ const changeLang = (lng) => {
     } else {
       const element = document.querySelector(`*[data-lang=${key}]`);
       if (element !== null) {
+        element.classList.add("anim-text-focus-in");
         element.textContent = currentDictionary[key];
+        setTimeout(() => {
+          element.classList.remove("anim-text-focus-in");
+        }, 1000);
       }
     }
   }
