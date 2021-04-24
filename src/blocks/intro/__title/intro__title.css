@@ -1,8 +1,6 @@
 .intro__title {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%) translateY(-15px);
-  margin: 0;
+  width: fit-content;
+  margin: 0 auto 40px;
   padding: 0;
   font-family: Cybero, Gilroy, Arial, sans-serif;
   font-size: 84px;
