@@ -2,11 +2,20 @@
   margin: 0 auto 50px;
   font-weight: 500;
   font-size: 22px;
-  line-height: 1.22;
+  line-height: 1.5;
   text-align: center;
   color: var(--mainTextColor);
 }
 
-.section-paragraph:last-of-type {
-  margin: 0;
+@media screen and (max-width: 767px) {
+  .section-paragraph {
+    font-size: calc(18px + 4 * ((100vw - 320px) / 447));
+  }
+}
+
+
+@media screen and (max-width: 320px) {
+  .section-paragraph {
+    font-size: 18px;
+  }
 }

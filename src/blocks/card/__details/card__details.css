@@ -3,10 +3,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%;
+  width: 72%;
   height: 100%;
   background: var(--secondaryComponColor);
-  padding: 50px 0;
+  padding: 20px 0;
   transition: 0.5s;
   transform-origin: left;
   transform: perspective(2000px) rotateY(-90deg);

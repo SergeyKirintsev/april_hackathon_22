@@ -30,7 +30,7 @@
 
 .skills__program-item{
     list-style-type: none;
-    margin: 0 20px 0 20px;
+    margin: 0 20px 20px 20px;
     transition: 1s linear .1s;
 }
 

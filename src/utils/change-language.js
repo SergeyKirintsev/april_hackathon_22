@@ -12,8 +12,9 @@ const dictionary = {
     "card-position-sergey": "фронтенд-разработчик",
     "card-position-dmitriy": "фронтенд-разработчик",
     "card-experience-alyona": "четыре года в дизайне, полгода во фронтенд-разработке",
-    "card-experience-sergey": "добавить описание",
+    "card-experience-sergey": "16 лет автоматизации в ПФР, совершаю первые шаги во фронтенде",
     "card-experience-dmitriy": "4 года C#-разработчик десктоп-приложений, полгода фронтент",
+
     "about": "О нас",
     "about-first-parag": "Мы молодая и дружная команда веб-разработчиков на пути к покорению новых вершин во фронтенде.",
     "about-second-parag": "Мы постоянно учимся и совершенствуемся, принимаем участие в разнообразных конкурсах и мероприятиях, учимся у гуру фронтенда и разрабатываем собственные проекты.",
@@ -59,8 +60,9 @@ const dictionary = {
     "card-position-sergey": "frontend developer",
     "card-position-dmitriy": "frontend developer",
     "card-experience-alyona": "four year experience as a designer, six months as a frontend developer",
-    "card-experience-sergey": "add description",
+    "card-experience-sergey": "16 years of automation in the PFR, making the first steps in the frontend",
     "card-experience-dmitriy": "4 years experience of C# desktop-application developer, half a year as frontend developer",
+
     "about": "About us",
     "about-first-parag": "We are a young and friendly team of web developers on the way to conquering new heights in the frontend development.",
     "about-second-parag": "We constantly learn and improve our skills, take part in various competitions and events, learn from the guru of the frontend and develop our own projects.",

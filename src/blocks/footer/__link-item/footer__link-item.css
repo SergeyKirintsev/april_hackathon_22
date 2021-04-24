@@ -1,3 +1,8 @@
 .footer__link-item{
     list-style-type: none;
+    max-width: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

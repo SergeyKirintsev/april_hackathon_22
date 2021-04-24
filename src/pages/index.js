@@ -138,3 +138,5 @@ for (let anchor of anchors) {
     });
   });
 }
+
+changeLang("RU");
