@@ -142,12 +142,12 @@ for (let anchor of anchors) {
 changeLang("RU");
 
 const targetElements = document.querySelectorAll("h2[id]");
-const menuHeight = document.querySelector(".header").offsetHeight;
+const menuHeight = header.offsetHeight;
 
 const checkScroll = () => {
   let menuPosition = 0;
   targetElements.forEach((el) => {
-    if (pageYOffset + menuHeight >= el.offsetTop - menuHeight) menuPosition++; //тут надо ещё вычесть высоту фиксированного хедера, чтобы точно определял
+    if (pageYOffset + menuHeight >= el.offsetTop - menuHeight) menuPosition++;
   });
   menuItems.forEach((el) => el.classList.remove("header__link_active"));
   menuItems[menuPosition].classList.add("header__link_active");
