@@ -62,7 +62,7 @@ const dictionary = {
     "card-experience-sergey": "add description",
     "card-experience-dmitriy": "add description",
     "about": "About us",
-    "about-first-parag": "We are a young and friendly team of web developers on the way to conquering new heights in the frontend.",
+    "about-first-parag": "We are a young and friendly team of web developers on the way to conquering new heights in the frontend development.",
     "about-second-parag": "We constantly learn and improve our skills, take part in various competitions and events, learn from the guru of the frontend and develop our own projects.",
     "about-third-parag": "We will develop and implement a frontend for your project too :)",
     "skills": "Skills",
