@@ -14,7 +14,7 @@
 @media screen and (max-width: 1250px) {
   .intro__lang {
     top: 0;
-    right: 5px;
+    right: 15px;
     transform: rotate(0deg);
   }
 }
