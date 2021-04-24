@@ -59,14 +59,12 @@ const photoCardContainer = document.querySelector(".intro__cards");
   }
 })();
 
+//попап отправки сообщения на почту команды
 const messageBtn = document.querySelector(".footer__message");
-
-const popupEdit = document.querySelector(".popup");
-let popupCloseBtn = popupEdit.querySelector(".popup__close");
-let popupEditContainer = popupEdit.querySelector(".popup__container");
-
-addPopupListener(popupEdit);
-
+const popupMessage = document.querySelector(".popup");
+let popupCloseBtn = popupMessage.querySelector(".popup__close");
+let popupMessageContainer = popupMessage.querySelector(".popup__container");
+addPopupListener(popupMessage);
 function addPopupListener(popup) {
   popup.addEventListener("mousedown", function (evt) {
     if (evt.target === popup) {
@@ -74,29 +72,24 @@ function addPopupListener(popup) {
     }
   });
 }
-
 function toggleListener(elem, popup) {
   elem.addEventListener("click", function () {
     togglePopup(popup);
   });
 }
-
 function togglePopup(popupElement) {
   popupElement.classList.toggle("popup_opened");
 }
-
 function popupEditSubmitHandler(evt) {
   evt.preventDefault();
-  togglePopup(popupEdit);
+  togglePopup(popupMessage);
 }
-
 messageBtn.addEventListener("click", function () {
-  togglePopup(popupEdit);
+  togglePopup(popupMessage);
 });
-
-toggleListener(popupCloseBtn, popupEdit);
-
-popupEditContainer.addEventListener("submit", popupEditSubmitHandler);
+toggleListener(popupCloseBtn, popupMessage);
+popupMessageContainer.addEventListener("submit", popupEditSubmitHandler);
+//--------------------------------------------
 
 const anchors = document.querySelectorAll('.header a[href^="#"]');
 

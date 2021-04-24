@@ -1,8 +1,14 @@
 .skills__program-zone{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    /* flex: 1;
+    display: grid;
+    grid-gap: 30px; */
+    /* grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); */
+    /* grid-template-rows: repeat(1, 90px); */
+
+    /* align-items: center; */
     margin-bottom: 0;
     margin-top: 85px;
     padding: 0 0;

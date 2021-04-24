@@ -2,3 +2,10 @@
     width: 90px;
     height: 90px;
 }
+
+@media screen and (max-width: 767px){
+    .skills__program-icon {
+        width: 70px;
+    height: 70px;
+    }
+  }
